@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+</head>
+<style>
+.container{
+    display: flex;
+
+
+}
+.card::before{
+    background: url('https://source.unsplash.com/user/wsanter') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+}
+.card{
+    padding: 23px 34px;
+    margin: 23px 12px;
+    /* border: 2px solid red; */
+    background-color: antiquewhite;
+    border-radius: 2%;
+    /* box-shadow: offset x, offset y, blur radius, spread radius , color; */
+    /* we can use rgba instead of color as well */
+    box-shadow: -5px 7px 10px 2px #e5cc9c ;
+    /* box-shadow: inset 5px 7xp green;  */
+
+}
+.card h2{
+    text-shadow: 2px 2px white;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="card"><h2>
+            C++
+
+        </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas necessitatibus sit dolorem magnam, ab corporis quasi tempore, fugit sunt libero, quas corrupti. Sed, exercitationem recusandae quo in voluptas magnam accusantium vero voluptate incidunt!</p></div>
+        <div class="card"><h2>
+            Python
+        </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas necessitatibus sit dolorem magnam, ab corporis quasi tempore, fugit sunt libero, quas corrupti. Sed, exercitationem recusandae quo in voluptas magnam accusantium vero voluptate incidunt!</p></div>
+        <div class="card"><h2>
+            C#
+        </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas necessitatibus sit dolorem magnam, ab corporis quasi tempore, fugit sunt libero, quas corrupti. Sed, exercitationem recusandae quo in voluptas magnam accusantium vero voluptate incidunt!</p></div>
+        <div class="card"><h2>
+            Java
+        </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas necessitatibus sit dolorem magnam, ab corporis quasi tempore, fugit sunt libero, quas corrupti. Sed, exercitationem recusandae quo in voluptas magnam accusantium vero voluptate incidunt!</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transitions</title>
+</head>
+<style>
+    h3{
+        color: white;
+    }
+    body{
+        background-color: rgb(5, 31, 57);
+
+    }
+#box{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+    align-items: center;
+    justify-content: center;
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+    /* transition shortcut property in one line  */
+    /* transition: background-color 1s ease-in 2s; */
+    transition: all 1s ease-in 0.3s;
+
+
+
+}
+#box:hover{
+    background-color: antiquewhite;
+    width: 400px;
+    height: 400px;
+    border-radius: 100px;
+    font-size: 25px;
+}
+</style>
+<body>
+    <h3>CSS Transitions</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

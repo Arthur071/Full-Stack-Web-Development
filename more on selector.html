@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+</head>
+<style>
+    h1{
+        background-color: aquamarine;
+        color: rgb(37, 37, 142);
+        font-weight: bold ;
+        text-align: center;
+    }
+    /* if there is a p tag inside div then this will apply. */
+    div p{
+        border: solid rgb(50, 0, 0) thin;
+        font-size: 23px;
+        color: rgb(142, 96, 5);
+        background-color: beige;
+    }
+    /* if there is a p taqg inside of an li in the div then this will apply */
+    /* div li p{
+        background-color: antiquewhite;
+        color: black;
+
+    } */
+    /* if p is right inside div */
+    /* div > p{
+        background-color: rgb(244, 140, 102);
+        color: darkred;
+        font-weight: bold;
+
+    } */
+    /* if p is right after div */
+    /* div + p{
+        background-color: deeppink;
+        color: maroon;
+    } */
+</style>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="item"><p>this is another paragraph inside li</p></li>
+        </ul>
+        <div class="row">
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p> 
+    </div>
+    <p>this is outermost paragraph</p>
+    
+</body>
+</html>

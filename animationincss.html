@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+</head>
+<style>
+.container{
+    background-color: chartreuse;
+}
+.box{
+    background-color: darksalmon;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation-name: anto1;
+    animation-name: anto2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes anto1 {
+    from{
+        width: 200px;
+    }
+    to{
+        width: 1300px;
+
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>

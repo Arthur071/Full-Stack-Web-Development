@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: 'Arimo', sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: solid purple;
+            margin: 33px auto;
+            background-color: rgb(243, 206, 174);
+
+
+        }
+        .item{
+            border: solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(247, 228, 228);
+
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+
+        }
+        #computer{
+            float: right;
+            width: 48%;
+
+        }
+        #stationary{
+            /* float: left; */
+            clear: both; /*it clears the float function upon it, same goes for the clear: right; clear: left;*/
+            width: 100%;
+
+        }
+        p , h1{
+            text-align: right;
+            text-align: left;
+            /* last come first served */
+            text-align: center;
+            text-align: justify;
+        }
+        h1{
+            width: 370px;
+            margin: 23px auto;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Welcome to my Store
+    
+        </h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat reiciendis libero cupiditate dolor est
+                iure, neque nesciunt perferendis quidem sunt obcaecati accusamus porro labore asperiores molestiae!
+                Architecto dignissimos dolorem sunt est facilis quaerat explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, quidem exercitationem natus consequatur eveniet maxime ut, velit molestias mollitia neque expedita porro voluptatem blanditiis architecto ex? Labore facere voluptatibus dolores cupiditate! Nisi, sed nihil?
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat reiciendis libero cupiditate dolor est
+                iure, neque nesciunt perferendis quidem sunt obcaecati accusamus porro labore asperiores molestiae!
+                Architecto dignissimos dolorem sunt est facilis quaerat explicabo.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, excepturi esse! Optio accusantium doloribus voluptate ratione corporis impedit sunt sed minima voluptatem labore veritatis officia suscipit pariatur aperiam nemo quae cupiditate illo, laudantium eos!
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat reiciendis libero cupiditate dolor est
+                iure, neque nesciunt perferendis quidem sunt obcaecati accusamus porro labore asperiores molestiae!
+                Architecto dignissimos dolorem sunt est facilis quaerat explicabo.
+            </p>
+        </div>
+        <div id="glass" class="item">
+            <h3>Glass</h3>
+            <p id="glasspara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat reiciendis libero cupiditate dolor est
+                iure, neque nesciunt perferendis quidem sunt obcaecati accusamus porro labore asperiores molestiae!
+                Architecto dignissimos dolorem sunt est facilis quaerat explicabo.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

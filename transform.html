@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform fucktion in css</title>
+</head>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            background-color: chocolate;
+            border: 2px solid black;
+            border-radius: 6px;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s ease-in-out ;
+        }
+        .box:hover {
+            /* transform: rotate(270deg); */
+            /* transform: skew(40deg); */
+            transform: scale(1.2);
+        }
+
+
+    </style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is my box
+        </div>
+    </div>
+</body>
+</html>
